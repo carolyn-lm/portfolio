@@ -5,14 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Carolyn Madden</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/395ff4e6a5.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Hi, I’m Carolyn! </h1>
-        <p>I'm a Front End Web Developer based in the Boston Area.</p>
+    <header id="top">
         <nav>
             <ul>
                 <li><a href="#projects">Projects</a></li>
@@ -21,33 +27,109 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <h1>Hi, I'm Carolyn! </h1>
+        <p class="section-wrapper">I'm a Full Stack Web Developer based in the Boston Area.</p>
+
     </header>
     <main>
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <p class="skill">HTML and CSS</p>
-            <p class="skill">JavaScript</p>
-            <p class="skill">React</p>
-            <p class="skill">Git and GitHub</p>
-            <p class="skill">Visual Studio Code</p>
-            <p class="skill">Chrome Dev Tools</p>
-        </section>
-        <section id="about">
-            <h2>Hi! I'm Carolyn Madden.</h2>
-            <p>I fell in love with coding my freshman year of college in my first Computer Science class. I have over 20
-                years experience of coding and working with data and records.</p>
-            <p>When I’m not coding, I love to read, work on jigsaw puzzles, or go for a hike.</p>
-        </section>
+        <a href="#top" id="scroll-to-top" class="hidden"><i class="fa-solid fa-angles-up"></i></a>
 
+        <section class="section-wrapper" id="projects">
+            <h2 class="section-header">Projects</h2>
+            <div id="project-container">
+                <div class="project-wrapper">
+                    <img class="project-image" src="img/unplugged.png" alt="Unplugged App">
+                    <h3 class="project-name">Unplugged</h3>
+                    <p class="project-desc">A multi-page responsive website coded with Flexbox. This versatile design
+                        has several sections,
+                        including a Cards design pattern, that can be repurposed for different sites.</p>
+                    <p><b>Skills: </b>HTML, CSS, Flexbox</p>
+                    <a class="project-btn" href="https://carolyn-lm.github.io/unplugged/" target="_blank">Live Page</a>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="img/repogallery.png" alt="Repo Gallery">
+                    <h3 class="project-name">GitHub Repo Gallery</h3>
+                    <p class="project-desc">Uses GitHub's API to pull data from my GitHub portfolio to create a gallery
+                        of repos. Visitors to the
+                        site can click on the repos to see more details and a link to the repo.</p>
+                    <p><b>Skills: </b>JavaScript</p>
+                    <a class="project-btn" href="https://carolyn-lm.github.io/github-repo-gallery/" target="_blank">Live
+                        Page</a>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="img/guess-the-park.png" alt="Guess the Park Game">
+                    <h3 class="project-name">Guess the Park Game</h3>
+                    <p class="project-desc">Displays pictures of National Parks and user can guess which park. User
+                        score is saved to local storage. Displays park info after each
+                        guess and has a list of all parks that can be sorted by name or location.</p>
+                    <p><b>Skills: </b>Flexbox, React</p>
+                    <a class="project-btn" href="https://guess-the-park.netlify.app/" target="_blank">Live Page</a>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="img/quotes.png" alt="Quote Collection">
+                    <h3 class="project-name">Quote Collection</h3>
+                    <p class="project-desc">Allows the user to save a collection of quotes grouped in folders. Can
+                        add or delete folders and quotes and select a color for each folder. Quotes are saved to
+                        local storage.</p>
+                    <p><b>Skills: React</b></p>
+                    <a class="project-btn" href="https://my-quote-collection.netlify.app/" target="_blank">Live Page</a>
+                </div>
+                <div class="project-wrapper">
+                    <img class="project-image" src="img/recipe-app.png" alt="Recipe Card App">
+                    <h3 class="project-name">Recipe Card App</h3>
+                    <p class="project-desc">Built using Flask, the Python web framework, and React on the front end,
+                        this application allows users to create, update, and delete recipes, and search through
+                        their collection.</p>
+                    <p><b>Skills: Python, Flask, React</b></p>
+                    <a class="project-btn" href="https://github.com/carolyn-lm/recipe-app">View Code</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-wrapper" id="skills">
+            <h2 class="section-header">Skills</h2>
+            <div id="skills-wrapper">
+                <div class="skill">HTML and CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Python</div>
+                <div class="skill">Flask</div>
+                <div class="skill">SQL</div>
+                <div class="skill">Git and GitHub</div>
+                <div class="skill">Visual Studio Code</div>
+                <div class="skill">Chrome Dev Tools</div>
+            </div>
+        </section>
+        <section class="section-wrapper" id="about">
+            <figure id="profile-wrapper">
+                <img id="profile-img" src="img/profilepic.JPG" alt="Carolyn">
+            </figure>
+            <div id="about-info">
+                <h2 class="section-header">Hi! I'm Carolyn Madden.</h2>
+                <div class="section-wrapper">
+                    <p>I fell in love with coding in my first Computer Science class in college. I enjoy taking an idea
+                        and turning it into a functional application. Although I am newer to web development,
+                        I have over 20 years experience in coding and working with data. Some of my roles have included
+                        Software Developer and Associate Registrar of Technology.</p>
+                    <p>When I'm not coding, I love to read, work on jigsaw puzzles, or go for a hike.</p>
+                    <p><b>Can't wait to work with you!</b></p>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-github"></i>
+    <footer class="section-wrapper" id="contact">
+        <h2 class="section-header">Contact Me</h2>
+        <div id="social">
+            <a href="mailto:carolynlmadden@gmail.com" class="social-link" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/carolynmadden/" target="_blank" class="social-link"> <i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/carolyn-lm" target="_blank" class="social-link"><i
+                    class="fa-brands fa-github"></i></a>
+
+        </div>
+        <p id="copyright">Copyright 2025 | Carolyn Madden</p>
     </footer>
 </body>
 
